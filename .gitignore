@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Flask
+instance/
+*.db
+
+# Env
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db

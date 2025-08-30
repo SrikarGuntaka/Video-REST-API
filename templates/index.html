@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Video API</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Video API Test</h1>
+      <p class="subtitle">Create, Read, Update, and Delete generic video information</p>
+      <form id="video-form">
+        <div class="row">
+          <label for="video-id">ID</label>
+          <input id="video-id" name="id" type="number" min="0" placeholder="1" required />
+        </div>
+        <div class="row">
+          <label for="video-name">Name</label>
+          <input id="video-name" name="name" type="text" placeholder="My Video" />
+        </div>
+        <div class="row">
+          <label for="video-views">Views</label>
+          <input id="video-views" name="views" type="number" min="0" placeholder="0" />
+        </div>
+        <div class="row">
+          <label for="video-likes">Likes</label>
+          <input id="video-likes" name="likes" type="number" min="0" placeholder="0" />
+        </div>
+        <div class="actions">
+          <button type="button" id="btn-create">CREATE</button>
+          <button type="button" id="btn-update">UPDATE</button>
+          <button type="button" id="btn-get">GET</button>
+          <button type="button" id="btn-delete">DELETE</button>
+          <button type="button" id="btn-clear" title="Delete all videos">CLEAR DB</button>
+        </div>
+      </form>
+
+      <pre id="output" class="output">Ready.</pre>
+    </main>
+
+    <script>window.API_BASE = "";</script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+  </html>
+
+
