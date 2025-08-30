@@ -24,4 +24,3 @@ http://127.0.0.1:5000/
 Notes:
 - Use the page buttons (CREATE, UPDATE, GET, DELETE, CLEAR DB) to test the API.
 - Data is stored locally in `database.db`. The CLEAR DB button wipes it.
-# Video-REST-API
